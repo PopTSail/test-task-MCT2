@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        height: 100%;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p {
+        margin: 0;
+      }
+
+      .content {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+
+      .video-block {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: fill;
+        z-index: -1;
+      }
+
+      .content-block {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        line-height: 1;
+        font-size: 0;
+      }
+
+      .text-part {
+        font-size: 3rem;
+        background-color: #000000;
+        color: #ffffff;
+        border: 1rem solid #000000;
+        display: inline-block;
+      }
+
+      .transparent-part {
+        border: 1rem solid #000000;
+        background-color: transparent;
+        display: inline-block;
+      }
+
+      .fill {
+        color: black;
+        background-color: black;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <video autoplay loop muted class="video-block">
+        <source
+          src="/video.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="content-block">
+
+        <div class="text-part" style="width: 40%;">psum dolor sit, amet consectetur adi</div>
+        <div class="transparent-part" style="width: 10%;"></div>
+        <div class="text-part" style="width: 50%;">to make something dolor sit, amet conse adicr</div>
+
+        <div class="text-part" style="width: 70%;">We're here to make something else We're here to make something </div>
+        <div class="transparent-part" style="width: 20%;"></div>
+        <div class="text-part" style="width: 10%;">to make</div>
+
+        <div class="text-part" style="width: 10%;">psumsit</div>
+        <div class="transparent-part" style="width: 15%;"></div>
+        <div class="text-part" style="width: 75%;">to make something psum dolor sit, amet consectetur adi We're here</div>
+
+        <div class="text-part" style="width: 42%;">We're here Lorem ipsum dolor sit, amet</div>
+        <div class="transparent-part" style="width: 18%;"></div>
+        <div class="text-part" style="width: 40%;">to make something else consectetur</div>
+
+        <div class="text-part" style="width: 40%;">psum dolor sit, amet consectetur adi</div>
+        <div class="transparent-part" style="width: 15%;"></div>
+        <div class="text-part" style="width: 45%;">to make something consectetur adipisicing </div>
+
+        <div class="text-part" style="width: 22%;">We're here tempora </div>
+        <div class="transparent-part" style="width: 25%;"></div>
+        <div class="text-part" style="width: 53%;">to make something else Lorem ipsum dolor sit, </div>
+
+        
+        <span class="fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa alias repellendus aliquid qui nulla quibusdam earum, assumenda molestiae vitae doloribus exercitationem tempora voluptate at quam ullam voluptatibus veniam odit sequi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa alias repellendus aliquid qui nulla quibusdam earum, assumenda molestiae vitae doloribus exercitationem tempora voluptate at quam ullam voluptatibus veniam odit sequi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa alias repellendus aliquid qui nulla quibusdam earum, assumenda molestiae vitae doloribus exercitationem tempora voluptate at quam ullam voluptatibus veniam odit sequi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa alias repellendus aliquid qui nulla quibusdam earum, assumenda molestiae vitae doloribus exercitationem tempora voluptate at quam ullam voluptatibus veniam odit sequi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa alias repellendus aliquid qui nulla quibusdam earum, assumenda molestiae vitae doloribus exercitationem tempora voluptate at quam ullam voluptatibus veniam odit sequi!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa alias repellendus aliquid qui nulla quibusdam earum, assumenda molestiae vitae doloribus exercitationem tempora voluptate at quam ullam voluptatibus veniam odit sequi!</span>
+        
+      </div>
+    </div>
+  </body>
+</html>
